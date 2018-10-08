@@ -11,7 +11,7 @@ $ cd scripts/
 $ python get-odin.py 1.0.0 # example capture for version 1.0.0 
 ```
 ## Dependencies
-* [Python 3](https://www.python.org/download/releases/3.0/)
+* [Python 2](https://www.python.org/downloads/release/python-2715/)
 * [requests](http://docs.python-requests.org/en/master/)
 * [zipfile](https://docs.python.org/3/library/zipfile.html)
 * [shutil](https://docs.python.org/3/library/shutil.html)
