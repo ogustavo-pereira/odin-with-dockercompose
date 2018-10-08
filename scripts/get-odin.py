@@ -84,11 +84,11 @@ def __remove_cache__(folder):
   completed_remove_cache = False
   print("remove cache folder")
 
-  #try:
-  rmtree(folder)
-  completed_remove_cache = True
-  #except:
-  #  print("error remove cache folder, verify PATH folder cache")
+  try:
+    rmtree(folder)
+    completed_remove_cache = True
+  except:
+    print("error remove cache folder, verify PATH folder cache")
 
   return completed_remove_cache
 
