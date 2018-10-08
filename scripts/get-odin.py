@@ -11,6 +11,19 @@ NAME_FILE = "odin.zip"
 URL_ODIN_FRAMEWORK = "https://api.github.com/repos/wpbrasil/odin/zipball/"
 
 def __download_odin__(url):
+  """
+    Download the Odin Framework zip file and add it to the .cache/ folder.
+
+    Parameters
+    ----------
+    url : string
+      File URL to download.
+
+    Returns
+    -------
+    bool
+      Return True if you have successfully downloaded False and otherwise.
+  """
   completed_download = False
   if(url):
     print("download odin framework, url: {}".format(url))
@@ -31,6 +44,19 @@ def __download_odin__(url):
   return completed_download
 
 def __extract_odin__(file):
+  """
+    Extracting zip file in .cache/ folder.
+
+    Parameters
+    ----------
+    file : string
+      Path of the file to be extracted.
+
+    Returns
+    -------
+    bool
+      Return True if you have successfully extracted False and otherwise.
+  """
   completed_extract = False
   print("extract odin framework, file: {}".format(file))
   
@@ -45,6 +71,19 @@ def __extract_odin__(file):
   return completed_extract
 
 def __move_odin__(folder):
+  """
+    Move cache folder to the Odin themes folder of the wordpress container (wp-cotent/themes/odin/).
+
+    Parameters
+    ----------
+    folder : string
+      Path to container folder Odin themes.
+
+    Returns
+    -------
+    bool
+      Return True if you have successfully moved False and otherwise.
+  """
   completed_move = False
   print("move folder odin for folder wordpress themes")
 
@@ -61,6 +100,19 @@ def __move_odin__(folder):
   return completed_move
 
 def __get_odin__(version):
+  """
+    Capture the Odin of the official website and move to the wordpress container themes folder (wp-content/themes/odin/).
+
+    Parameters
+    ----------
+    version : string
+      Odin's version.
+
+    Returns
+    -------
+    bool
+      Return True if you have successfully get False and otherwise.
+  """
   completed_get = False
   url = URL_ODIN_FRAMEWORK + version
   print("get odin framework")
@@ -81,6 +133,18 @@ def __get_odin__(version):
   return completed_get
 
 def __remove_cache__(folder):
+  """
+    Remove folder used for caching.
+
+    Parameters
+    ----------
+    folder : string
+      Folder path to delete.
+    Returns
+    -------
+    bool
+      Return True if you have successfully removed False and otherwise.
+  """
   completed_remove_cache = False
   print("remove cache folder")
 

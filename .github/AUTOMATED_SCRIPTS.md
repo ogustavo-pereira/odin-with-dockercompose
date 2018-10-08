@@ -1,5 +1,5 @@
 # Automated Scripts :rocket:
-You can use a ready script written in `Python` to download any version of **Odin Framework** using the commands: 
+You can use a ready script :fire: written in `Python` to download any version of **Odin Framework** using the commands: 
 ```shell
 $ cd scripts/
 $ python get-odin.py # capture the latest version
