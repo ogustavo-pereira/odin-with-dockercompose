@@ -45,5 +45,5 @@ In your browser you can use localhost to acess your wordpress and your theme.
 
 And Great Job !
 
-### Automated Scripts
-Click [here](.github/AUTOMATED_SCRIPTS.md) for more informations about automated scripts.
+### Automated Scripts :fire:
+Click [here](.github/AUTOMATED_SCRIPTS.md) for more informations about automated scripts :book:

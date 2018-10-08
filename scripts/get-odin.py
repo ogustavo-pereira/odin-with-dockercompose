@@ -5,10 +5,10 @@ from zipfile import ZipFile
 from re import compile
 from shutil import move, rmtree
 
-FOLDER = ".cache/"
-FOLDER_THEMES_WORDPRESS_ODIN = "../wp-content/themes/odin/"
-NAME_FILE = "odin.zip"
-URL_ODIN_FRAMEWORK = "https://api.github.com/repos/wpbrasil/odin/zipball/"
+FOLDER = ".cache/" # folder containing temporarily downloaded files.
+FOLDER_THEMES_WORDPRESS_ODIN = "../wp-content/themes/odin/" # path to Odio themes folder from WordPress container.
+NAME_FILE = "odin.zip" # name of the downloaded file .zip of the official website
+URL_ODIN_FRAMEWORK = "https://api.github.com/repos/wpbrasil/odin/zipball/" # URL of the official website framework.
 
 def __download_odin__(url):
   """
